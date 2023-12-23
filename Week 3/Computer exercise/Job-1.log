@@ -1,0 +1,19 @@
+Analysis initiated from SIMULIA established products
+Abaqus JOB Job-1
+Abaqus Student Edition 2021
+Begin Analysis Input File Processor
+11/18/2021 9:05:00 PM
+Run pre.exe
+11/18/2021 9:05:01 PM
+End Analysis Input File Processor
+Begin Abaqus/Explicit Packager
+11/18/2021 9:05:02 PM
+Run package.exe
+11/18/2021 9:05:02 PM
+End Abaqus/Explicit Packager
+Begin Abaqus/Explicit Analysis
+11/18/2021 9:05:02 PM
+Run explicit.exe
+11/18/2021 9:06:16 PM
+End Abaqus/Explicit Analysis
+Abaqus JOB Job-1 COMPLETED

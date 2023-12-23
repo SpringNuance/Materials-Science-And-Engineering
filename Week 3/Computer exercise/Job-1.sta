@@ -1,0 +1,169 @@
+Abaqus/Explicit Student Edition 2021             DATE 18-Nov-2021  TIME 21:05:02
+-------------------------------------------------------------------------------
+ PREPROCESSOR WARNING MESSAGES
+-------------------------------------------------------------------------------
+
+
+***WARNING: There are 1 warning messages in the data (.dat) file.  Please
+            check the data file for possible errors in the input file.
+
+
+-------------------------------------------------------------------------------
+ MODEL INFORMATION (IN GLOBAL X-Y COORDINATES)
+-------------------------------------------------------------------------------
+
+   Total mass in model = 1.14676E-07
+   Center of mass of model = ( 1.528872E+00, 2.561315E+00)
+
+   Moments of Inertia :
+                 About Center of Mass              About Origin
+      I(XX)          2.290983E-07                  9.814128E-07
+      I(YY)          8.474120E-08                  3.527913E-07
+      I(XY)          7.747107E-09                 -4.413163E-07
+      I(ZZ)          3.138395E-07                  1.334204E-06
+
+-------------------------------------------------------------------------------
+ STABLE TIME INCREMENT INFORMATION
+-------------------------------------------------------------------------------
+
+
+  The stable time increment estimate for each element is based on
+  linearization about the initial state.
+
+
+   Initial time increment = 9.12088E-09
+
+   Statistics for all elements:
+      Mean = 1.78939E-08
+      Standard deviation = 2.22302E-09
+
+   Most critical elements:
+    Element number   Rank    Time increment   Increment ratio
+    (Instance name)
+   ----------------------------------------------------------
+          14          1       9.120884E-09      1.000000E+00
+    PART-1-1
+         556          2       9.839053E-09      9.270083E-01
+    PART-1-1
+          11          3       9.893430E-09      9.219132E-01
+    PART-1-1
+         901          4       1.066396E-08      8.552999E-01
+    PART-1-1
+         765          5       1.084975E-08      8.406534E-01
+    PART-1-1
+         902          6       1.116890E-08      8.166320E-01
+    PART-1-1
+          10          7       1.121225E-08      8.134750E-01
+    PART-1-1
+         829          8       1.134006E-08      8.043066E-01
+    PART-1-1
+         649          9       1.134595E-08      8.038887E-01
+    PART-1-1
+         860         10       1.142338E-08      7.984399E-01
+    PART-1-1
+
+
+  Instance name for the most critical element will be printed if the critical
+  element changes or at the beginning of a new page.
+
+
+
+Abaqus/Explicit Student Edition 2021             DATE 18-Nov-2021  TIME 21:05:03
+
+The single precision Abaqus/Explicit executable will be used in this analysis.
+
+
+-------------------------------------------------------------------------------
+ SOLUTION PROGRESS
+-------------------------------------------------------------------------------
+
+ STEP 1  ORIGIN 0.0000
+
+  Total memory used for step 1 is approximately 1.6 megabytes.
+  Global time estimation algorithm will be used.
+  Scaling factor:  1.0000
+              STEP     TOTAL      WALL      STABLE    CRITICAL    KINETIC      TOTAL
+INCREMENT     TIME      TIME      TIME   INCREMENT     ELEMENT     ENERGY     ENERGY
+        0  0.000E+00 0.000E+00  00:00:00 9.121E-09          14  1.981E-06  1.981E-06
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+Output Field Frame Number      0 of     20 requested intervals at increment zero.
+
+***WARNING: THE ANALYSIS MAY NEED A LARGE NUMBER OF INCREMENTS (MORE THAN
+            300000), AND IT MAY BE AFFECTED BY ROUND-OFF ERRORS. RUNNING THE
+            DOUBLE PRECISION EXECUTABLE IS RECOMMENDED.
+
+    34710  5.000E-04 5.000E-04  00:00:05 1.439E-08          14  8.547E-05  8.677E-04
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+Output Field Frame Number      1 of     20 requested intervals at  5.000050E-04
+    69494  1.000E-03 1.000E-03  00:00:10 1.437E-08          14  1.172E-04  2.775E-03
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+Output Field Frame Number      2 of     20 requested intervals at  1.000009E-03
+   104412  1.500E-03 1.500E-03  00:00:14 1.437E-08          14  1.317E-04  4.210E-03
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+Output Field Frame Number      3 of     20 requested intervals at  1.500003E-03
+   139304  2.000E-03 2.000E-03  00:00:18 1.437E-08          14  1.371E-04  4.321E-03
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+Output Field Frame Number      4 of     20 requested intervals at  2.000003E-03
+   173941  2.500E-03 2.500E-03  00:00:21 1.437E-08          14  1.371E-04  4.055E-03
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+Output Field Frame Number      5 of     20 requested intervals at  2.500005E-03
+   208578  3.000E-03 3.000E-03  00:00:25 1.437E-08          14  1.412E-04  3.582E-03
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+Output Field Frame Number      6 of     20 requested intervals at  3.000007E-03
+   243215  3.500E-03 3.500E-03  00:00:28 1.437E-08          14  1.416E-04  4.926E-03
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+Output Field Frame Number      7 of     20 requested intervals at  3.500010E-03
+   277852  4.000E-03 4.000E-03  00:00:32 1.437E-08          14  1.416E-04 -2.816E-03
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+Output Field Frame Number      8 of     20 requested intervals at  4.000012E-03
+
+***WARNING: THE ANALYSIS REACHED A LARGE NUMBER OF INCREMENTS (300000), AND IT
+            MAY BE AFFECTED BY ROUND-OFF ERRORS. RUNNING THE DOUBLE PRECISION
+            EXECUTABLE IS RECOMMENDED.
+
+   312488  4.500E-03 4.500E-03  00:00:35 1.437E-08          14  1.416E-04 -6.098E-03
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+Output Field Frame Number      9 of     20 requested intervals at  4.500000E-03
+   347125  5.000E-03 5.000E-03  00:00:39 1.437E-08          14  1.414E-04  8.844E-03
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+Output Field Frame Number     10 of     20 requested intervals at  5.000003E-03
+   381762  5.500E-03 5.500E-03  00:00:42 1.437E-08          14  1.410E-04  2.465E-02
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+Output Field Frame Number     11 of     20 requested intervals at  5.500005E-03
+   416399  6.000E-03 6.000E-03  00:00:45 1.437E-08          14  1.404E-04  5.162E-02
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+Output Field Frame Number     12 of     20 requested intervals at  6.000008E-03
+   451036  6.500E-03 6.500E-03  00:00:48 1.437E-08          14  1.401E-04  2.551E-02
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+Output Field Frame Number     13 of     20 requested intervals at  6.500010E-03
+   485673  7.000E-03 7.000E-03  00:00:52 1.437E-08          14  1.400E-04  4.471E-02
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+Output Field Frame Number     14 of     20 requested intervals at  7.000012E-03
+   520309  7.500E-03 7.500E-03  00:00:55 1.437E-08          14  1.398E-04  9.929E-03
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+Output Field Frame Number     15 of     20 requested intervals at  7.500000E-03
+   555379  8.000E-03 8.000E-03  00:00:58 1.437E-08          14  1.397E-04  7.922E-02
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+Output Field Frame Number     16 of     20 requested intervals at  8.000003E-03
+   591171  8.500E-03 8.500E-03  00:01:02 1.437E-08          14  1.395E-04  6.306E-02
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+Output Field Frame Number     17 of     20 requested intervals at  8.500012E-03
+   626962  9.000E-03 9.000E-03  00:01:05 1.437E-08          14  1.393E-04  5.853E-02
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+Output Field Frame Number     18 of     20 requested intervals at  9.000006E-03
+   662753  9.500E-03 9.500E-03  00:01:09 1.437E-08          14  1.392E-04  9.083E-02
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+Output Field Frame Number     19 of     20 requested intervals at  9.500001E-03
+   698545  1.000E-02 1.000E-02  00:01:12 1.437E-08          14  1.391E-04  3.758E-02
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+Restart Number  1 at 1.00000E-02
+Output Field Frame Number     20 of     20 requested intervals at  1.000000E-02
+  EXPLICIT EXECUTABLE TIME SUMMARY
+       USER TIME (SEC)      =   71.000
+       SYSTEM TIME (SEC)    =  0.50000
+       WALLCLOCK TIME (SEC) =           72
+              INIT (SEC) =          0
+              MAIN (SEC) =         72
+
+  THE ANALYSIS HAS COMPLETED SUCCESSFULLY
+

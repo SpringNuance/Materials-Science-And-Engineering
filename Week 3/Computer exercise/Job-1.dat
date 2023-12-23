@@ -1,0 +1,94 @@
+1
+
+   Abaqus Student Edition 2021                                  Date 18-Nov-2021   Time 21:05:00
+   
+
+
+
+     PROCESSING PART, INSTANCE, AND ASSEMBLY INFORMATION
+   *******************************************************
+
+
+     END PROCESSING PART, INSTANCE, AND ASSEMBLY INFORMATION
+   ***********************************************************
+
+
+
+
+     OPTIONS BEING PROCESSED
+   ***************************
+
+
+  *Heading
+  *Node
+  *Element, type=CPS3
+  *Element, type=CPS4R
+  *Nset, nset=ASSEMBLY_PART-1-1_SET-1
+  *Elset, elset=ASSEMBLY_PART-1-1_SET-1
+  *Nset, nset=ASSEMBLY_DISP
+  *Nset, nset=ASSEMBLY_XSYMM
+  *Nset, nset=ASSEMBLY_YSYMM
+  *Elset, elset=ASSEMBLY_DISP
+  *Elset, elset=ASSEMBLY_XSYMM
+  *Elset, elset=ASSEMBLY_YSYMM
+  *material, name=MATERIAL-1
+  *density
+  *elastic
+  *plastic
+  *solidsection, elset=ASSEMBLY_PART-1-1_SET-1, material=MATERIAL-1
+  *solidsection, elset=ASSEMBLY_PART-1-1_SET-1, material=MATERIAL-1
+  *boundary
+  *boundary
+  *boundary, amplitude=AMP-1
+  *solidsection, elset=ASSEMBLY_PART-1-1_SET-1, material=MATERIAL-1
+  *elementoutput, directions=YES
+  *amplitude, name=AMP-1
+  *output, field
+  *output, history, variable=PRESELECT
+  *Step, name=Step-1, nlgeom=YES
+  *Step, name=Step-1, nlgeom=YES
+  *dynamic, explicit
+  *boundary
+  *boundary
+  *boundary, amplitude=AMP-1
+  *output, field
+  *nodeoutput
+  *elementoutput, directions=YES
+  *output, history, variable=PRESELECT
+  *endstep
+  *Step, name=Step-1, nlgeom=YES
+  *dynamic, explicit
+  *boundary
+
+ ***WARNING: THE OPTION *BOUNDARY,TYPE=DISPLACEMENT HAS BEEN USED; CHECK STATUS 
+             FILE BETWEEN STEPS FOR WARNINGS ON ANY JUMPS PRESCRIBED ACROSS THE 
+             STEPS IN DISPLACEMENT VALUES OF TRANSLATIONAL DOF. FOR ROTATIONAL 
+             DOF MAKE SURE THAT THERE ARE NO SUCH JUMPS. ALL JUMPS IN 
+             DISPLACEMENTS ACROSS STEPS ARE IGNORED
+  *boundary
+  *boundary, amplitude=AMP-1
+  *endstep
+
+
+
+                            P R O B L E M   S I Z E
+
+
+          NUMBER OF ELEMENTS IS                                   910
+          NUMBER OF NODES IS                                      959
+          NUMBER OF NODES DEFINED BY THE USER                     959
+          TOTAL NUMBER OF VARIABLES IN THE MODEL                 1918
+          (DEGREES OF FREEDOM PLUS MAX NO. OF ANY LAGRANGE MULTIPLIER
+           VARIABLES. INCLUDE *PRINT,SOLVE=YES TO GET THE ACTUAL NUMBER.)
+
+
+
+                              END OF USER INPUT PROCESSING
+
+
+
+     JOB TIME SUMMARY
+       USER TIME (SEC)      =  0.10000    
+       SYSTEM TIME (SEC)    =  0.10000    
+       TOTAL CPU TIME (SEC) =  0.20000    
+       WALLCLOCK TIME (SEC) =          1

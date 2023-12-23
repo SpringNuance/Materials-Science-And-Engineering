@@ -1,0 +1,40 @@
+figure; plot(ebsd, 'coordinates','on');
+ebsd_corrected = ebsd(ebsd.mad<1);
+ebsdcorri = ebsd_corrected('indexed');
+[grains,ebsdcorri.grainId,ebsdcorri.mis2mean] = calcGrains(ebsdcorri,'angle',15*degree);
+initialGrainNr = length(grains);
+ebsdcorri(grains(grains.grainSize<2)) = [];
+[grains,ebscorri.grainId, grainId] = calcGrains(ebsdcorri,'angle',15*degree);
+grainsAl = grains('Aluminium');
+totalGrainNr = length(grainsAl);
+
+ipfKey = ipfColorKey(ebsd('Aluminium'));
+ipfKey.inversePoleFigureDirection = vector3d.Z;
+colors = ipfKey.orientation2color...
+(grainsAl.meanOrientation);
+
+figure; plot(grainsAl, colors);
+
+outerBoundary_id = any(grainsAl.boundary.grainId == 0, 2);
+grain_id = grainsAl.boundary(outerBoundary_id).grainId;
+grain_id(grain_id == 0) = [];
+
+figure; plot(grainsAl(grain_id),grainsAl(grain_id).meanOrientation);
+
+grainsAl(grain_id) = [];
+innerGrainNr = length(grainsAl);
+
+figure; plot(grainsAl, grainsAl.meanOrientation);
+
+[GrainfitEangle,GrainfitElongA, GrainfitEshortb] = fitEllipse(grainsAl);
+Grainarea = grainsAl.area;
+GraineqR = grainsAl.equivalentRadius;
+GraineqD = GraineqR * 2;
+Grainasp = 1./grainsAl.aspectRatio;
+
+figure;
+plot(grainsAl,grainsAl.meanOrientation,'linewidth',1);
+hold on;
+plotEllipse(grainsAl.centroid,GrainfitElongA,GrainfitEshortb, ...
+GrainfitEangle,'lineColor','r');
+hold off;
